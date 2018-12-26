@@ -26,6 +26,7 @@ The application is hosted on heroku:
 https://contract-management-system.herokuapp.com/contracts
 
 For the backend, use json-server as the mockup API for development, and also deploy the json-server on heroku.
+I created about 20+ contract records in the json-server, but if you get a blank contract table, just try to refresh the page. I found that sometimes the json-server hosted on Heroku is not very stable.
 
 *****************************************************************
 
