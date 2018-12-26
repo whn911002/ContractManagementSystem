@@ -21,7 +21,8 @@ Add chart(s) using currency exchange rates.
 
 Solutions:
 
-This CRUD application is focused on frontend, so use React to build the application. The application is hosted on heroku:
+This CRUD application is focused on frontend, so use React to build the application. The programming languages include JS, JSX, and HTML. Also used JSON to store configuration variables. For the chart, the data resource is CryptoCompare, and used chart.js.
+The application is hosted on heroku:
 https://contract-management-system.herokuapp.com/contracts
 
 For the backend, use json-server as the mockup API for development, and also deploy the json-server on heroku.
