@@ -35,6 +35,16 @@ The NavBar on dashboard provides two routes to:
 2. Cryptocurrency Rate (ETH).
 
 For the "Contracts Dashboard", user can CREAT(click the "New Contract" button), READ(default), UPDATE(click the user's name in the table), and DELETE(click the "Delete" button).
-User can also mark the contract with the "star" sign in the table to make it "important" for future use.
 
 For the "Cryptocurrency Rate", there are two charts. The first one shows the exchange rate during the last 30 days for ETH/USD, and the second one shows the current exchange rate for ETH to USD/CHF/EUR.
+
+Below the "New Contract" button, there is a text message field showing the admin how many contracts the system has now. The number changes dynamically when admin adds/deletes contract.
+
+I created search function for this application. The search box is located between the NavBar and contracts table. Admin can use it to search users' first name OR last name. It's NOT case-sensitive so it could be easier for admin to do the search.
+
+In the table, I added a "Star" sign to provide the admin the functionality to mark contract as important for any future use.
+
+At the bottom of the page, there is a pagination bar so the application won't feed all contracts in one page to make it too messy.
+
+
+
