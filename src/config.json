@@ -1,0 +1,6 @@
+{
+  "dbUrl": "https://contract-management-system-api.herokuapp.com",
+  "dbUrl2": "http://localhost:3000",
+  "currentRateUrl": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD,CHF,EUR",
+  "historyRateUrl": "https://min-api.cryptocompare.com/data/histoday?fsym=ETH&tsym=USD&limit=30"
+}
