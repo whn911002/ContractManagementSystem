@@ -1,4 +1,4 @@
-# ContractManagementSystem
+# Contract Management System
 
 Code challenge:
 
