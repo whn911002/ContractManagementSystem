@@ -40,6 +40,8 @@ For the "Contracts Dashboard", user can CREAT(click the "New Contract" button), 
 
 For the "Cryptocurrency Rate", there are two charts. The first one shows the exchange rate during the last 30 days for ETH/USD, and the second one shows the current exchange rate for ETH to USD/CHF/EUR.
 
+When admin clicks the "New Contract" button, the app will direct the admin to the new contract creat page. I added input validation funtion for input fields, and the "Save" button won't be enabled until the admin fills out all fields.
+
 Below the "New Contract" button, there is a text message field showing the admin how many contracts the system has now. The number changes dynamically when admin adds/deletes contract.
 
 I created search function for this application. The search box is located between the NavBar and contracts table. Admin can use it to search users' first name OR last name. It's NOT case-sensitive so it could be easier for admin to do the search.
