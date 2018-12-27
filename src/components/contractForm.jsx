@@ -19,9 +19,13 @@ class ContractForm extends Form {
     id: Joi.string(),
     name: Joi.string()
       .required()
+      .min(3)
+      .max(15)
       .label("Name"),
     surname: Joi.string()
       .required()
+      .min(2)
+      .max(15)
       .label("Surname"),
     amountInUsd: Joi.number()
       .required()
@@ -29,8 +33,14 @@ class ContractForm extends Form {
       .label("Amount in USD"),
     currency: Joi.string()
       .required()
+      .min(3)
+      .max(3)
       .label("Currency"),
-    date: Joi.required().label("Date")
+    date: Joi.string()
+      .required()
+      .min(10)
+      .max(10)
+      .label("Date")
   };
 
   async componentDidMount() {
