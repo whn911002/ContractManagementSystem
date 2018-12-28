@@ -50,5 +50,7 @@ In the table, I added a "Star" sign to provide the admin the functionality to ma
 
 At the bottom of the page, there is a pagination bar so the application won't feed all contracts in one page to make it too messy.
 
-
-
+*****************************************************************
+New feature added 12/27/2018:
+Add SELECT component for Currency field, but the currencies are from a fake service which is hardcoded.
+TODO: Use real API to provide all currencies and the admin can decide which currencies should be supported in the system.
