@@ -2,6 +2,7 @@ import React from "react";
 import Joi from "joi-browser";
 import Form from "./common/form";
 import { getContract, saveContract } from "../services/contractService";
+import { getCurrencies } from "../services/fakeCurrencyService";
 
 class ContractForm extends Form {
   state = {
@@ -12,6 +13,7 @@ class ContractForm extends Form {
       currency: "",
       date: ""
     },
+    currencies: [],
     errors: {}
   };
 
@@ -44,6 +46,9 @@ class ContractForm extends Form {
   };
 
   async componentDidMount() {
+    const currencies = getCurrencies();
+    this.setState({ currencies });
+    
     const contractId = this.props.match.params.id;
     if (contractId === "new") return;
 
@@ -76,7 +81,7 @@ class ContractForm extends Form {
           {this.renderInput("name", "Name")}
           {this.renderInput("surname", "Surname")}
           {this.renderInput("amountInUsd", "Amount In USD", "number")}
-          {this.renderInput("currency", "Currency")}
+          {this.renderSelect("currency", "Currency", this.state.currencies)}
           {this.renderInput("date", "Date", "date")}
           {this.renderButton("Save")}
         </form>
