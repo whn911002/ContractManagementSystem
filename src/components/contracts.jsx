@@ -73,10 +73,11 @@ export default class Contracts extends Component {
     let filtered = allContracts;
     if (searchQuery)
       filtered = allContracts.filter(
-        m.user.name &&
-        m.user.surname &&
-        (m.user.surname.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          m.user.name.toLowerCase().includes(searchQuery.toLowerCase()))
+        m =>
+          m.user.name &&
+          m.user.surname &&
+          (m.user.surname.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            m.user.name.toLowerCase().includes(searchQuery.toLowerCase()))
       );
 
     const sorted = _.orderBy(filtered, [sortColumn.path], [sortColumn.order]);
